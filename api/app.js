@@ -16,23 +16,22 @@ app.get('/api/item/:slug', (req, res) => {
 });
 
 
-
-app.get('/', (req, res) => {
-    res.send(`<h1>Salamualikum from express</h1>
-    <style>
-    body{
-        margin:0;
-        background: linear-gradient(to right, orange, red);
-    }
-    </style>`)
-})
-app.get('/about', (re, rs) => {
-    rs.send("<h2>This in about testing our app on vercel</h2>")
-
-})
-let port = process.env.PORT || 2000
-app.listen(2000, () => console.log("running on http://2000"))
-
-
-
 module.exports = app;
+
+// app.get('/', (req, res) => {
+//     res.send(`<h1>Salamualikum from express</h1>
+//     <style>
+//     body{
+//         margin:0;
+//         background: linear-gradient(to right, orange, red);
+//     }
+//     </style>`)
+// })
+// app.get('/about', (re, rs) => {
+//     rs.send("<h2>This in about testing our app on vercel</h2>")
+
+// })
+// let port = process.env.PORT || 2000
+// app.listen(2000, () => console.log("running on http://2000"))
+
+
