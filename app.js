@@ -24,7 +24,7 @@ app.get('/about', (re, rs) => {
     rs.send("<h2>This in about testing our app on vercel</h2>")
 
 })
-
+let port = process.env.PORT || 2000
 app.listen(2000, () => console.log("running on http://2000"))
 
 
