@@ -15,5 +15,6 @@
             "src": "/public/(.*)",
             "dest": "ser.js"
         }
-    ]
+    ],
+    "outputDirectory": "public"
 }
