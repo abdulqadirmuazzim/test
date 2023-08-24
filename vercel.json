@@ -13,7 +13,7 @@
         },
         {
             "src": "/public/(.*)",
-            "dest": "file.js"
+            "dest": "ser.js"
         }
     ]
 }
