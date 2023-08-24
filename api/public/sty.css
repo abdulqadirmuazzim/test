@@ -1,0 +1,135 @@
+body {
+    background: rgb(239, 255, 196);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+
+}
+
+.contain {
+    background: #c9f3e79b;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+}
+
+header h1 {
+    color: rgb(105, 38, 230);
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header p {
+    font-size: 25px;
+    color: blue;
+}
+
+/* nav */
+.nav li {
+    list-style: none;
+    float: left;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid rgb(103, 226, 175);
+    margin-right: 5px;
+    border-bottom: none;
+}
+
+.nav a:hover {
+    background: #5ae0bc;
+    transition: all 0.5s ease;
+}
+
+.one {
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 3px solid rgb(103, 226, 175);
+    border-bottom: 3px solid rgb(103, 226, 175);
+}
+
+.title {
+    font-size: 20px;
+}
+
+.box1 {
+    width: 60%;
+    float: left;
+    padding-right: 30px;
+    box-sizing: border-box;
+    /* border-right: 2px solid #673795; */
+}
+
+.graphic {
+    position: relative;
+}
+
+.graphic img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.des {
+    position: absolute;
+    margin: 0;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.503);
+}
+
+.des p {
+    color: white;
+    font-size: 15px;
+}
+
+.box2 {
+    width: 40%;
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #5ae0bc;
+    padding: 20px 40px;
+}
+
+.half::before,
+.half::after {
+    content: "";
+    display: table;
+}
+
+.half::after {
+    clear: both;
+}
+
+.half {
+    zoom: 1;
+}
+
+footer {
+    text-align: center;
+    color: cyan;
+}

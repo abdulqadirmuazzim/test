@@ -15,9 +15,7 @@ app.get('/api/item/:slug', (req, res) => {
     res.end(`Item: ${slug}`);
 });
 
-
-module.exports = app;
-
+app.use(exp.static('public'))
 app.get('/', (req, res) => {
     res.send(`<h1>Salamualikum from express</h1>
     <style>
@@ -32,6 +30,8 @@ app.get('/about', (re, rs) => {
 
 })
 let port = process.env.PORT || 2000
-app.listen(2000, () => console.log("running on http://2000"))
+app.listen(2000, () => console.log("running on http://localhost:2000"))
 
 
+
+module.exports = app;
