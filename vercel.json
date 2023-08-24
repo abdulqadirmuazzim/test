@@ -17,15 +17,15 @@
         },
         {
             "src": "/public/(.*)",
-            "dest": "ser.js"
+            "dest": "public/ser.js"
         },
         {
             "src": "/public/(.*)",
-            "dest": "coo.css"
+            "dest": "public/coo.css"
         },
         {
             "src": "/public/(.*)",
-            "dest": "home.html"
+            "dest": "public/home.html"
         }
     ]
 }
