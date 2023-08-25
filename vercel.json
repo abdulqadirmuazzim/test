@@ -14,14 +14,6 @@
         {
             "src": "/(.*)",
             "dest": "app.js"
-        },
-        {
-            "src": "/ser.js(.*)",
-            "dest": "public/ser.js"
-        },
-        {
-            "src": "/coo.css(.*)",
-            "dest": "public/coo.css"
         }
     ],
     "outputDirectory": "public"

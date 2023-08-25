@@ -1,8 +1,9 @@
 const exp = require('express')
+const path = require('path')
 
 const app = exp()
 
-app.use(exp.static(`${__dirname}\\public`))
+app.use(exp.static(path.join(__dirname, 'public')))
 
 app.use((req, res, next) => {
     console.log(`Incoming request for ${req.originalUrl}`);
