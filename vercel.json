@@ -6,7 +6,7 @@
             "use": "@vercel/node"
         },
         {
-            "src": "./public/*.js",
+            "src": "./public/*",
             "use": "@vercel/static"
         }
     ],
@@ -16,16 +16,13 @@
             "dest": "app.js"
         },
         {
-            "src": "/public/(.*)",
+            "src": "/ser.js(.*)",
             "dest": "public/ser.js"
         },
         {
-            "src": "/public/(.*)",
+            "src": "/coo.css(.*)",
             "dest": "public/coo.css"
-        },
-        {
-            "src": "/public/(.*)",
-            "dest": "public/home.html"
         }
-    ]
+    ],
+    "outputDirectory": "public"
 }

@@ -1,10 +1,13 @@
 const exp = require('express')
-// const { v4 } = require('uuid');
 
 const app = exp()
 
-app.use(exp.static('public'))
+app.use(exp.static(`${__dirname}\\public`))
 
+app.use((req, res, next) => {
+    console.log(`Incoming request for ${req.originalUrl}`);
+    next();
+});
 
 app.get('/', (req, res) => {
     res.send(`<!DOCTYPE html>
@@ -18,15 +21,13 @@ app.get('/', (req, res) => {
         <title>Testing app</title>
     </head>
     <body>
-    <h1>Salamualikum from express</h1>
+    <h1>testing testing from express</h1>
     <script type="text/javascript" src="/ser.js"></script>
     </body>
     </html>`)
 })
-app.get('/about', (re, rs) => {
-    rs.send("<h2>This in about testing our app on vercel</h2>")
 
-})
+
 let port = process.env.PORT || 2000
 app.listen(2000, () => console.log("running on http://localhost:2000"))
 
